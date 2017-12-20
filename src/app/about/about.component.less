@@ -1,0 +1,28 @@
+.subnav {
+  border-top: solid 2px #bca2a3;
+  .navbar {
+    padding: 0px;
+    li {
+      a {
+        padding: 1rem 1.5rem;
+        overflow: hidden;
+        padding-left: 30px;
+        position: relative;
+        img {
+          transform: rotate(70deg);
+          width: 100px;
+          position: absolute;
+          top: -15px;
+          left:-50px;
+          display: none;
+        }
+        &.is-active {
+          border-left: solid 2px #bca2a3;
+          img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

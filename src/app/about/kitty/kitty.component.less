@@ -1,0 +1,23 @@
+.fakeTable {
+  border: solid 1px #b2ae7c;
+  display: inline-block;
+  overflow: auto;
+  table {
+    float: left;
+    thead {
+      font-weight: 800;
+      tr {
+        border-bottom: solid 1px #b2ae7c;
+      }
+    }
+    tr {
+      border-bottom: solid 1px #b2ae7c;
+      &:last-child {
+        border: none;
+      }
+    }
+    td {
+      padding: 10px;
+    }
+  }
+}

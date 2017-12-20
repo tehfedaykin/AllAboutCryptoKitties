@@ -1,0 +1,23 @@
+<div class="subnav">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" *ngFor="let item of navItems" >
+            <a class="nav-link" routerLink="{{item.path}}" [routerLinkActive]="['is-active']">
+              <span>{{item.title}}</span>
+              <img src="../../assets/img/{{navKitty}}" alt="Nav Kitty">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand">CryptoKitty 101</a>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

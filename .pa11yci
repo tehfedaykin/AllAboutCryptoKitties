@@ -1,0 +1,14 @@
+{
+  "defaults": {
+    "standard": "WCAG2AAA"
+  },
+  "urls": [
+    "http://localhost:4200/",
+    "http://localhost:4200/about",
+    "http://localhost:4200/about/kitties",
+    "http://localhost:4200/about/requirements",
+    "http://localhost:4200/about/purchasing",
+    "http://localhost:4200/ethereum101",
+    "http://localhost:4200/resources"
+  ]
+}

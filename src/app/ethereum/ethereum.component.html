@@ -1,7 +1,49 @@
 <div class="container">
-  <h1>Ethereum 101</h1>
+  <div class="row">
+    <h1>Ethereum 101</h1>
 
-  <p>At its simplest, Ethereum is an open software platform based on blockchain technology that
-    enables developers to build and deploy decentralized applications.</p>
-
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>At its simplest, Ethereum is an open software platform based on blockchain technology that
+        enables developers to build and deploy decentralized applications.</p>
+    </div>
+    <div class="col-4">
+      <div class="gas-advert x_panel">
+        <div class="x_title">
+          <h4>Recommended Gas Prices<br> <small> (based on current network conditions)</small></h4>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Speed</th>
+                <th>Gas Price <br> (gwei)</th>
+                <th>Predicted Wait <br> (minutes)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color:#1ABB9C"><strong>SafeLow (&lt;60m)</strong></td>
+                <td style="color:#1ABB9C">1</td>
+                <td style="color:#03586A">8.8</td>
+              </tr>
+              <tr>
+                <td style="color:#03586A"><strong>Standard (&lt;5m)<strong></strong></strong></td>
+                <td style="color:#03586A">2</td>
+                <td style="color:#03586A">3.3</td>
+              </tr>
+              <tr>
+                <td style="color:red"><strong>Fast (&lt;2m)<strong></strong></strong></td>
+                <td style="color:red">20</td>
+                <td style="color:#03586A">0.5</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Note: Estimates not valid when multiple transactions are batched from the same address or for transactions sent to addresses with many (e.g. &gt; 100) pending transactions</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

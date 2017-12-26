@@ -9,6 +9,13 @@
     "http://localhost:4200/about/requirements",
     "http://localhost:4200/about/purchasing",
     "http://localhost:4200/ethereum101",
+    {
+      "url": "http://localhost:4200/ethereum101",
+      "actions": [
+        "click element #myButton",
+        "wait for element modal-container to be hidden"
+      ]
+    },
     "http://localhost:4200/resources"
   ]
 }

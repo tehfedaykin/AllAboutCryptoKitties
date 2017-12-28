@@ -103,7 +103,7 @@ var tests = [
         'notice',
         'warning'
       ],
-      hideElements: '.gas-advert',
+      //hideElements: '.gas-advert',
       log: {
         error: console.error.bind(console)
       }
@@ -127,7 +127,8 @@ var tests = [
 
 
 function runTest(test) {
-  test.testOptions.screenCapture = './examples/output/' + test.name +'.png'
+  test.testOptions.screenCapture = './examples/output/' + test.name +'.png';
+  test.testOptions.standard = 'WCAG2AAA';
   var pa11ytest = pa11y(test.testOptions);
   pa11ytest.run(test.url, function(error, results) {
   	if (error) {

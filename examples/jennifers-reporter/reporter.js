@@ -23,15 +23,15 @@ function reportResults(results, url) {
 	console.log(buildHtml(results, url));
 }
 
-function buildHtml(results, url) {
+function buildHtml(results, url, v5) {
 	var renderMain = template(path.join(__dirname, '/report.html'));
 	return renderMain({
 		date: new Date(),
-		errorCount: results.filter(isError).length,
-		warningCount: results.filter(isWarning).length,
-		noticeCount: results.filter(isNotice).length,
+		errorCount: !v5 ? results.filter(isError).length : results.issues.filter(isError).length ,
+		warningCount: !v5 ? results.filter(isWarning).length : results.issues.filter(isWarning).length,
+		noticeCount: !v5 ? results.filter(isNotice).length : results.issues.filter(isNotice).length,
     screenGrab: results.screenGrab,
-		results: buildResultsHtml(results),
+		results: !v5 ? buildResultsHtml(results) : buildResultsHtml(results.issues),
 		url: url
 	});
 }

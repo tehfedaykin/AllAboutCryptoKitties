@@ -1,46 +1,64 @@
-<h2> Wtf r Cryptokitties?</h2>
-<p>
-  CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures
-  we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated,
-  taken away, or destroyed.
-</p>
-
-<h2> Cattributes</h2>
-
-<div *ngFor="let table of tables">
-  <h3>{{table.name}}</h3>
-  <div class="fakeTable">
-    <table *ngFor="let col of table.columns">
-      <thead>
-        <tr>
-          <td>{{col.name}}</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let row of col.rows">
-          <td >{{row}}</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="row">
+  <h2> Wtf r Cryptokitties?</h2>
+  <p>
+    CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures
+    we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated,
+    taken away, or destroyed.
+  </p>
+</div>
+<div class="row">
+  <div class="col">
+    <h2> Cattributes</h2>
+    <div *ngFor="let table of tables">
+      <h3>{{table.name}}</h3>
+      <div class="fakeTable">
+        <table *ngFor="let col of table.columns">
+          <thead>
+            <tr>
+              <td>{{col.name}}</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of col.rows">
+              <td >{{row}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <img src="./assets/img/navkitty3.svg">
   </div>
 </div>
+<div class="row">
+  <div class="col">
+    <h3>Color Features</h3>
+    <div class="blink"><span>blinking text</span></div>
 
-
-<h3>Color Features</h3>
-<h4>Primary, Secondary, Tertiary, Eye</h4>
-<ul>
-  <li *ngFor="let color of colors">{{color.name}}</li>
-</ul>
-
-<h3>Reproductive Rates</h3>
-<p><b>Fast</b>: 1 m</p>
-<p><b>Swift</b>: 2-5m</p>
-<p><b>Snappy</b>: 10-30m</p>
-<p><b>Brisk</b>: 1-2h</p>
-<p><b>Plodding</b>: 4-8h</p>
-<p><b>Slow</b>: 12-24h</p>
-<p><b>Sluggish</b>: 2-4d</p>
-<p><b>Catatonic</b>: 1 week</p>
-
-<h3>Kitty Designer</h3>
-<p><a href="https://bytesforbites.github.io/cryptokitty-designer/#/">https://bytesforbites.github.io/cryptokitty-designer/#/</a></p>
+    <a href="https://bytesforbites.github.io/cryptokitty-designer/#/"><img src="./assets/img/navkitty6.svg"></a>
+    <p><a href="https://bytesforbites.github.io/cryptokitty-designer/#/">https://bytesforbites.github.io/cryptokitty-designer/#/</a></p>
+  </div>
+  <div class="col">
+    <h4>Primary, Secondary, Tertiary, Eye</h4>
+    <ul>
+      <li *ngFor="let color of colors">{{color.name}}</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3>Reproductive Rates</h3>
+    <p><b>Fast</b>: 1 m</p>
+    <p><b>Swift</b>: 2-5m</p>
+    <p><b>Snappy</b>: 10-30m</p>
+    <p><b>Brisk</b>: 1-2h</p>
+    <p><b>Plodding</b>: 4-8h</p>
+    <p><b>Slow</b>: 12-24h</p>
+    <p><b>Sluggish</b>: 2-4d</p>
+    <p><b>Catatonic</b>: 1 week</p>
+  </div>
+  <div class="col">
+    <img src="./assets/img/navkitty2.svg">
+  </div>
+</div>

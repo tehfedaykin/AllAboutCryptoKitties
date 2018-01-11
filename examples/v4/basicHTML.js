@@ -19,10 +19,10 @@ var test = pa11y({
   	}
 });
 
-test.run(url, function(error, results) {
+test.run('localhost:4200/', function(error, results) {
   if (error) {
     return console.error(error.message);
   }
-  var htmlResults = htmlReporter.process(results, url);
+  var htmlResults = htmlReporter.process(results, 'localhost:4200/');
   fs.writeFile('examples/output/report.html', htmlResults, function(err) {})
 });

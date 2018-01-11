@@ -1,7 +1,7 @@
 // An example of running Pa11y programmatically
 'use strict';
 
-var htmlReporter = require('pa11y/reporter/html');
+var jennifersReporter = require('../jennifers-reporter/reporter');
 var pa11y = require('pa11y');
 var fs = require('file-system');
 
@@ -27,7 +27,7 @@ test.run('http://localhost:4200/', function(error, results) {
 		return console.error(error.message);
 	}
 
-  var htmlResults = htmlReporter.process(results, 'http://localhost:4200/');
+  var htmlResults = jennifersReporter.process(results, 'http://localhost:4200/');
 
   fs.writeFile('examples/output/report.html', htmlResults, function(err) {})
 

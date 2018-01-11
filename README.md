@@ -6,22 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running example accessibility tests with pa11y
 
-## Build
+To run all tests from pa11y-ci, run `pa11y-ci`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To generate a basic pa11y test run `node examples/v4/basicAF`. The results of this test will output to your terminal.
 
-## Running unit tests
+To generate a basic html report with pa11y run `node examples/v4/basicHTML`. The results will be output into examples/output/report.html.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To generate a custom html report with pa11y that includes links to WCAG guidelines in each error run `node examples/v4/custom-html-report`. The results will include links to relevant guidelines in error messages.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To generate a custom dashboard including results of accessibility tests against all app links run `node examples/v4/cattastic-custom-report`. Result pages include screencaps.
